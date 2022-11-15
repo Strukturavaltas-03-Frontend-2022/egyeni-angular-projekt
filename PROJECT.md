@@ -26,11 +26,11 @@ a lényeg, hogy ezt a "mini dokumentációban" is tüntesd fel.
 _FONTOS_: Kérünk Titeket, hogy a repository gyökerében hozzátok létre a projektet,    
 ne pedig egy almappában.    
 Ezt a következőképpen tudjátok megtenni új Angular-projekt létrehozásakor:   
-`ng new --name="projekt-neve" --directory . --style scss --routing true --strict true`   
+`ng new --name="projekt-neve" --directory . --style scss --routing true`   
 
 ---
 ## "Mini" dokumentáció
-A README.md fájlban röviden írd le egy-egy mondatban, hogy:
+A PROJECT.md fájlban röviden írd le egy-egy mondatban, hogy:
 - mi az oldal témája (esetleg rövid indoklással)
 - hogyan kell elindítani az alkalmazást (milyen parancsot kell kiadni)
 - miként kell elindítani a backendet (amennyiben erre külön szükség van)
@@ -41,7 +41,7 @@ A téma megválasztásában és az adatok összetételében a fentiek kivételé
 ---
 ## Főoldal és navigációs sáv
 
-Tetszőlegesen kialakított komponensek tetszőlegesen kialakított tartalommal
+Tetszőlegesen kialakított komponensek tetszőlegesen kialakított tartalommal.   
 A következők a kötelezően megvalósítandók:
 - A navigációs sávon lehessen kattintani a listázó aloldalra
 - A navigációs sáv minden aloldalon tartalmazzon linket/menüpontot a főoldalra és a listázóra (a szerkesztő aloldalra külön nem kell)
@@ -71,19 +71,23 @@ _EXTRA_: A lapozó oldalszáma az egyes kártyák számának növekedésével/cs
 ## Szerkesztő komponens
 
 - Az oldal egy reszponzív űrlapot tartalmaz
-- Az űrlapra az adatbázis (listázó komponens) egyes elemeinek adatai mellett elhelyezett `edit` gombra való kattintással lehet eljutni.   
-A gomb formáját, megjelenését Rátok bízzuk, legyen intuitív a felhasználói felület.
+- Használhatsz template-driven vagy reactive form-ot is
+- Az űrlapra az adatbázis (listázó komponens) egyes elemeinek adatai mellett elhelyezett `edit` gombra való kattintással lehet eljutni   
+A gomb formáját, megjelenését Rátok bízzuk, legyen intuitív a felhasználói felület
 - A szerkesztő komponens nulladik indexű elemére navigálva egy üres űrlap jöjjön be,   
-ahol egy kártya új adatai vehetők fel.  
+ahol egy kártya új adatai vehetők fel  
 - Az új elem felvétele után az alkalmazás navigáljon a kártyás listázó aloldalra,   
-és jelenjen meg benne az új kártya.
+és jelenjen meg benne az új kártya
+- Legyen alapvető validáció: 
+  - hiányos adatok esetén ne lehessen elküldeni az űrlapot
+  - minden mező legyen kötelező
 
 ---
 ## Extrák
 A fentieken kívül minden extrának számít.   
 Ezek lehetnek:
 - felugró üzenetek bizonyos műveletek sikeressége/sikertelensége esetén (pl. Toastr)
-- validálás az űrlapon hibaüzenetekkel
+- részletes validálás az űrlapon hibaüzenetekkel
 - dinamikusan változ(tathat)ó oszlopok, fejlécek
 - további szűrők
 - statisztikák
