@@ -9,7 +9,8 @@ Elegendő egy entitással dolgozni, amelynek legalább öt tulajdonsága van, ez
 - string típusú
 - number típusú
 - boolean típusú
-- string típusú és képre mutat
+- string típusú és képre mutat    
+  
 Az adatázis legyen legalább 50 elemű.   
 
 _FIGYELEM_: Ha nincs ötleted, használd ezt az adatbázist, az URL a következő: 
@@ -17,8 +18,8 @@ https://nettuts.hu/jms/aTeGitHubNeved/cinema
 (Az aTeGitHubNeved helyére a GitHub-fiókod elnevezését írd be.)   
 
 Az oldalak legyenek teljesen reszponzívak.   
-A dizájnhoz használhatsz Boostrapet, vagy egyéb, különféle UI komponenskönyvtárakat (pl. Material) vagy bármely más frameworköt (pl. Tailwind), template-et.   
-A használt megoldást tüntesd fel a "mini dokumentációban".
+A dizájnhoz használhatsz Boostrapet, vagy egyéb, különféle UI-komponenskönyvtárakat (pl. Material) vagy bármely más frameworköt (pl. Tailwind), template-et.   
+A használt megoldást tüntesd fel a "mini" dokumentációban.
 
 Az adatokat online URL-ről is lekérheted, de JSON-szervert is használhatsz,   
 a lényeg, hogy ezt a "mini dokumentációban" is tüntesd fel.
@@ -30,7 +31,7 @@ Ezt a következőképpen tudjátok megtenni új Angular-projekt létrehozásakor
 
 ---
 ## "Mini" dokumentáció
-A PROJECT.md fájlban röviden írd le egy-egy mondatban, hogy:
+A README.md fájlban röviden írd le egy-egy mondatban, hogy:
 - mi az oldal témája (esetleg rövid indoklással)
 - hogyan kell elindítani az alkalmazást (milyen parancsot kell kiadni)
 - miként kell elindítani a backendet (amennyiben erre külön szükség van)
@@ -85,6 +86,7 @@ ahol egy kártya új adatai vehetők fel
 ---
 ## Extrák
 A fentieken kívül minden extrának számít.   
+
 Ezek lehetnek:
 - felugró üzenetek bizonyos műveletek sikeressége/sikertelensége esetén (pl. Toastr)
 - részletes validálás az űrlapon hibaüzenetekkel
